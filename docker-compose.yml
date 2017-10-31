@@ -1,0 +1,5 @@
+SwiftyStubs:
+  image: ibmcom/swift-ubuntu:latest
+  volumes:
+    - .:/root/SwiftyStubs
+  command: bash -c "cd /root/SwiftyStubs && swift build && swift test"
